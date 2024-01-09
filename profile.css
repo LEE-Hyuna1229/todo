@@ -1,0 +1,36 @@
+*{
+  text-align: center; 
+  font-family: 'Gaegu', sans-serif;
+}
+
+html{
+  background-color: #ccc2af;
+  font-size: 16px;
+}
+
+body{
+  width: 640px;
+  margin: auto; /*너비에서 남는 여백을 동일하게 분배*/
+}
+
+h1{
+  font-size: 60px; 
+}
+
+img{
+  width: 200px;
+  height: 250px;
+  border-radius: 100px;
+  border-style: dashed;
+  border-color: #414742;
+  border-width: 3px;
+  padding: 10px; 
+}
+
+p{
+  font-size: 1.2rem;
+}
+
+mark{
+  background-color:#268509
+} 
