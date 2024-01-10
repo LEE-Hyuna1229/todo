@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 만들기</title>
+    <style>
+
+      div.words{
+        font-size: 30px;
+        text-align:center;
+      }
+
+      ul{
+        text-align: center;
+        width: 100%;
+        display: table;
+        background-color: #003399;
+      }
+
+      li{
+        display:inline;
+        background-color: #003399;
+        margin-right: 20px;
+      }
+
+      @media screen and (max-width: 2000px){
+        div.words{
+          background-color: #0033CC;
+        }
+      }
+      @media screen and (max-width: 1500px){
+        div.words{
+          background-color: #0033FF;
+        }
+        ul{
+          width: 100px;
+          text-align: unset;
+        }
+        li{
+          display:block;
+          margin-right: 0px;
+          margin-bottom: 10px;
+          padding-top: 10px;
+        }
+        }
+    
+      @media screen and (max-width: 1000px){
+        div.words{
+          background-color: #0066FF;
+        }
+      }
+      @media screen and (max-width: 800px){
+        div.words{
+          background-color: #0099FF;
+        }
+      }
+      @media screen and (max-width: 600px){
+        div.words{
+          background-color: #00CCFF;
+        }
+      }
+      @media screen and (orientation: 소금빵){
+        p.bread:after{
+          content: '소금빵';
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="words">
+      어서오세요 화면크기를 줄여보세요
+    </div>
+    <ul>
+      <li>단팥빵</li>
+      <li>소금빵</li>
+      <li>크루와상</li>
+      <li>소부루빵</li>
+      <li>찹쌀꽈배기</li>
+    </ul>
+  </body>
+</html>
