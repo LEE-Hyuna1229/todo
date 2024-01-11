@@ -30,6 +30,12 @@ header.header{
   padding: 0 2.5rem 0 0;
   flex-grow: 1;
 }
+.header-content__nav ul li:hover{
+  color:#c5c6c9;
+}
+.header-content__nav ul li.active:hover{
+  color:#c5c6c9;
+}
 .header-content__nav ul{
   padding: 0;
   margin: 0;
@@ -66,6 +72,9 @@ header.header{
   border-radius: 0.25rem;
   font-weight: 600;
 }
+.header-content__input .chat:hover{
+  background-color: #c5c6c9;
+}
 .header-content__input .icon input{
   margin-right: 1rem;
   border: none;
@@ -76,7 +85,9 @@ header.header{
 .header-content__input .icon{
   display: none;
 }
-
+.header-content__input .glass:hover{
+  font-size: 1.9rem;
+}
 @media screen and (max-width: 1192px){
   .header-content__input .search{
     display: none;

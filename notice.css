@@ -29,6 +29,10 @@
   line-height: 1.32;
   font-size: 1.125rem;
 }
+.notice__content__title:hover{
+  font-size: 1.25rem;
+  color:#330000;
+}
 .notice__content__address{
   line-height: 1.4;
   font-size: .875rem;
