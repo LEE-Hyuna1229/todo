@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리 동네에서 찾는 도토리알바</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      html{
+        font-size: 16px;
+      }
+      body{
+        margin: 0;
+      }
+      .flex{
+        display: flex;
+      }
+      .main{
+        padding: 4rem 0 5rem;
+      }
+    </style>
+    <link href="header.css" rel="stylesheet">
+    <link href="info.css" rel="stylesheet">
+    <link href="notice.css" rel="stylesheet">
+    <link href="banner.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-content flex">
+          <div class="header-content__logo">도토리마켓</div>
+          <nav class="header-content__nav flex">
+            <ul>
+              <li>중고거래</li>
+              <li>동네가게</li>
+              <li class="active">알바</li>
+              <li>부동산 직거래</li>
+              <li>중고차 직거래</li>
+            </ul>
+          </nav>
+          <div class="header-content__input flex">
+            <span class="icon glass">
+              <input type="button" value="&#128269;">
+            </span>
+            <span>
+              <input type="text" class="search" placeholder="물품이나 동네를 검색해 보세요">
+            </span>
+            <span class="icon menu">
+              <input type="button" value="&#9776;">
+            </span>
+            <span>
+              <input type="button" class="chat" value="채팅하기">
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="info">
+          <div class="info__text">
+            <h1>우리 동네에서 찾는<br> 도토리알바</h1>
+            <p>걸어서 10분 거리의<br> 동네 알바들 여기 다 있어요.</p>
+          </div>
+        </section>
+
+        <section class="notice">
+          <h2 class="notice__title">인기 도토리알바</h2>
+          <div class="notice__container flex">
+            <article class="notice__item flex">
+              <div class="notice__thumb"></div>
+              <div class="notice__content">
+                <div class="notice__content__title">도토리마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                <div class="notice__content__address">주식회사 도토리서비스 - 서울특별시 광진구 능동</div>
+                <div class="notice__content__pay">월급 5,000,000</div>
+              </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">도토리쇼핑몰 제품포장 및 입고정리(여자 2명)</div>
+                  <div class="notice__content__address">(주)도토리코퍼레이션 - 경기도 화성시 비봉면</div>
+                  <div class="notice__content__pay">월급 770,000</div>
+                </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">강아지 유치원 하원 도와주실 분 구합니다.</div>
+                  <div class="notice__content__address">서울특별시 서초구 반포동</div>
+                  <div class="notice__content__pay">건당 12,000</div>
+                </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">1/17일 12시 30분 네일 국시 모델((급구))</div>
+                  <div class="notice__content__address">광주광역시 북구 운암동</div>
+                  <div class="notice__content__pay">일급 65,000</div>
+                </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">방에 불 꺼져있는지 확인해주실분 구합니다</div>
+                  <div class="notice__content__address">도토리집 - 서울특별시 광진구 군자동</div>
+                  <div class="notice__content__pay">건당 10,000</div>
+                </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">도토리카페 주중 커피제조 아르바이트 구합니다</div>
+                  <div class="notice__content__address">도토리벅스 - 경기도 수원시 매탄동</div>
+                  <div class="notice__content__pay">월급 6,000,000</div>
+                </div>
+            </article>
+          </div>
+
+          <div class="banner flex">
+            <div class="banner__text">도토리알바 이용방법이 궁금하다면<br> 지금 바로 알아보세요!</div>
+            <button class="banner__button">이용방법 알아보기</button>
+          </div>
+
+          <div class="notice__container flex">
+            <article class="notice__item flex">
+              <div class="notice__thumb"></div>
+              <div class="notice__content">
+                <div class="notice__content__title">속눈썹 연장 모델 구합니다</div>
+                <div class="notice__content__address">서울특별시 광진구 능동</div>
+                <div class="notice__content__pay">시급 10,000</div>
+              </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">주방보조아르바이트 구함</div>
+                  <div class="notice__content__address">햇살꼬마김밥 동탄본점 - 경기도 화성시 도토리시</div>
+                  <div class="notice__content__pay">시급 12,000</div>
+                </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">강아지 유치원 등원 도와주실 분 구합니다.</div>
+                  <div class="notice__content__address">서울특별시 서초구 반포동</div>
+                  <div class="notice__content__pay">건당 10,000</div>
+                </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">우유 하나만 문앞까지 사다주실 분 구합니다.</div>
+                  <div class="notice__content__address">도토리 옆집 - 경기도 화성시 산척동</div>
+                  <div class="notice__content__pay">건당 20,000</div>
+                </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">도토리돈까스집 주말 오전파트 아르바이트 구합니다</div>
+                  <div class="notice__content__address">맛있다도토리돈까스 - 서울특별시 광진구 군자동</div>
+                  <div class="notice__content__pay">시급 11,000</div>
+                </div>
+            </article>
+            <article class="notice__item flex">
+                <div class="notice__thumb"></div>
+                <div class="notice__content">
+                  <div class="notice__content__title">도토리베이커리 카페 주중 파트별 커피제조 아르바이트 구합니다</div>
+                  <div class="notice__content__address">달콤도토리베이커리 - 서울특별시 서초구</div>
+                  <div class="notice__content__pay">월급 6,000,000</div>
+                </div>
+            </article>
+          </div>
+
+          <div class="banner flex">
+            <div class="banner__text">우리동네 알바가 궁금하다면<br> 도토리에서 바로 찾아보세요!</div>
+            <button class="banner__button">앱 다운로드 하기</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <section class="footer__menu">
+            <div class="footer__apps">
+              <div class="footer__appdown">도토리마켓 앱 다운로드</div>
+              <div class="footer__appbtn flex">
+                <button>App Store</button>
+                <button>Google Play</button>
+              </div>
+            </div>
+            <nav class="footer__nav flex">
+              <ul>
+                <li>중고거래</li>
+                <li>동네가게</li>
+                <li>도토리알바</li>
+                <li>부동산 직거래</li>
+                <li>중고차 직거래</li>
+              </ul>
+              <ul>
+                <li>도토리비즈니스</li>
+                <li>채팅하기</li>
+              </ul>
+              <ul>
+                <li>자주 묻는 질문</li>
+                <li>회사 소개</li>
+                <li>인재 채용</li>
+              </ul>
+            </nav>
+          </section>
+          <section class="footer__info">
+            <div>
+              <strong>대표</strong> 이현아 | <strong>사업자번호</strong> 111-22-33333
+            </div>
+            <div>
+              <strong>직업정보제공사업 신고번호</strong> 1234-도톨도톨-5678
+            </div>
+            <div>
+              <strong>주소</strong> 서울특별시 광진구 군자동 3길 20, 203호 (도토리서비스)
+            </div>
+            <div>
+              <strong>전화</strong> 1234-1234 | <strong>고객문의</strong> ss@ddrservice.com
+            </div>
+            <p>
+              <strong>이용약관</strong> &nbsp; &nbsp;
+              <strong style="color: #000000;">개인정보처리방침</strong> &nbsp; &nbsp;
+              <strong>위치기반서비스 이용약관</strong> &nbsp; &nbsp;
+              <strong>이용자보호 비전과 계획</strong> &nbsp; &nbsp;
+            </p>
+          </section>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html> 
