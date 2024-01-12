@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1회차과제_정보를입력받는페이지</title>
+    <style>
+      #좋아하는동물{
+        color: orange;
+      }
+      #name{
+        color: blueviolet;
+      }
+      #좋아하는과일{
+        color: tomato;
+      }
+      #좋아하는동물:hover{
+        color: darkolivegreen;
+      }
+      #좋아하는과일:hover{
+        color: darkgreen;
+      }
+
+    </style>
+</head>
+<body>
+  <h1 id="name"></h1>
+  <a href="https://namu.wiki/w/%ED%91%B8%EB%B0%94%EC%98%A4" target="_blank">
+    <p id="좋아하는동물"></p>
+  </a>
+  <a href="https://namu.wiki/w/%EB%94%B8%EA%B8%B0" target="_blank">
+    <p id="좋아하는과일"></p>
+  </a>
+  <p id="안내"> 입력하신 정보를 클릭하면 관련 정보 사이트로 이동합니다:0)</p>
+
+  <script>
+    const namepart = document.querySelector("#name")
+    let name = prompt("이름을 입력해주세요.")
+    namepart.textContent = `이름: ${name}`
+
+   const animalpart = document.querySelector("#좋아하는동물")
+   animalpart.textContent = `당신이 좋아하는 동물은 ${prompt('좋아하는 동물을 입력해주세요! 참고로 저는 판다를 좋아합니다:)')} 이군요!`
+
+   document.querySelector("#좋아하는과일").textContent 
+   = `${prompt('좋아하는 과일을 입력해주세요. 저는 요즘 딸기가 참 맛나네요')}를 좋아하시는 군요!`
+
+  </script>
+</body>
+</html>
