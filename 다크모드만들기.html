@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다크모드만들기</title>
+    <style>
+      
+      #white{
+        margin-right: 40px;
+      }
+     
+    </style>
+</head>
+<body>
+
+  <h4>lightmode darkmode</h4>
+  <button onclick=light_mode()>white</button>
+  <button onclick=dark_mode()>black</button>
+ 
+
+
+  <script>
+    function dark_mode() {
+      document.querySelector("body").style.backgroundColor="black";
+      document.querySelector("body").style.color="white";
+    }
+    function light_mode() {
+      document.querySelector("body").style.backgroundColor="white";
+      document.querySelector("body").style.color="black";
+    }
+ 
+  </script>
+</body>
+</html>
