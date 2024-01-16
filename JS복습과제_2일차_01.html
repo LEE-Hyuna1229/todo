@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS복습과제 2일차_01</title>
+</head>
+<body>
+  <p></p>
+<script>
+  const p = document.querySelector("p")
+  let a = parseInt(prompt("중간고사 점수를 입력하세요:"))
+  if(a >= 90){
+    p.textContent = `당신의 중간고사 점수는 ${a}점! 학점은 A !! ` 
+  }else if(a >= 80){
+    p.textContent = `당신의 중간고사 점수는 ${a}점! 학점은 B !! `
+  }else if(a >= 70){
+    p.textContent = `당신의 중간고사 점수는 ${a}점! 학점은 C !! `
+  }else if(a >= 60){ 
+    p.textContent = `당신의 중간고사 점수는 ${a}점! 학점은 D !! `
+  }else{
+    p.textContent = `당신의 중간고사 점수는 ${a}점! 학점은 FF !! FF가 2개면 학사경고입니다^_^ `
+  }
+</script>
+</body>
+</html>
