@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS복습과제_2일차_04</title>
+    <style>
+      #number_game_position{
+       margin: 200px auto;
+       text-align: center;
+       width: 600px;
+       padding-top: 40px;
+       padding-bottom: 40px;
+       color: white;
+       border: 1px solid whitesmoke;
+       background-color: black;
+      }
+    </style>
+</head>
+<body>
+    <div id="number_game_position">
+        <h2>Mystery Number 맞추기</h2>
+        <p class="text_font">1부터 100사이의 숫자를 입력하세요!</p>
+        <form>
+            <p class="text_font">숫자 : <input type="text" id="user" size="5"> <input type="button" id="btn" value="확인"
+                    onclick="guess()"></p>
+            <p class="text_font">추측횟수 : <input type="text" id="guesses" size="30"></p>
+            <p class="text_font">힌트 : <input type="text" id="result" size="20"></p>
+            <p class="text_font"><input type="button" id="resetbtn" value="다시!"></p>
+        </form>
+        <div id="area"></div>
+    </div>
+  <script>
+    var ran; //랜덤으로 나올 수
+    var count; // 시도한 횟수
+    function guess() {
+      var num1 = document.getElementById("user").value;
+      if (num1 == "") {
+        alert('숫자를 입력하세요');
+      } else if (num1 == ran) {
+        var area = document.getElementById("area");
+        area.innerHTML = "정답입니다";
+      } else {
+        if (ran > num1) {
+            document.getElementById("result").value = (num1 + "보다 큽니다.");
+        }
+        else {
+            document.getElementById("result").value = (num1 + "보다 작습니다.");
+        }
+      }
+    document.getElementById("guesses").value = ("시도한 횟수는" + (count++) + "번 입니다.");
+    }
+    function gameReset() {
+      ran = Math.floor(Math.random() * 100 + 1);
+      count = 1;
+      document.getElementById("area").innerHTML = "";
+      document.getElementById("result").value = "";
+      document.getElementById("guesses").value = "";
+      document.getElementById("user").value = "";
+    }
+      window.onload = function () {
+      document.getElementById("resetbtn").addEventListener('click', function () {
+        gameReset();
+    });
+    gameReset();
+    }
+  </script>
+    
+</body>
+</html>
