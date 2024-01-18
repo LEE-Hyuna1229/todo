@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS복습과제_3일차_카운트다운</title>
+</head>
+<body>
+  <p id="now"></p>
+  <script>
+    const p = document.getElementById("now")
+    
+    const now = new Date()
+
+    let year = now.getFullYear()
+    let month = now.getMonth() + 1
+    let date = now.getDate()
+    let hour = now.getHours()
+    let min = now.getMinutes()
+    let sec = now.getSeconds()
+  
+
+    p.textContent = `현재 시간 : ${month}/${date} ${year} ${hour}:${min}:${sec} GMT+0900 (한국 표준시)`
+  </script>
+</body>
+</html>

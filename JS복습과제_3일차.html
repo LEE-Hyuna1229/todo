@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS복습과제_3일차_스톱워치</title>
+</head>
+<body>
+    <div id="container">
+      <h1 id="title">⏱스톱워치⏱</h1>
+      <p id="stopwatch">
+        00:00:00
+      </p>
+      <button onclick="startClock()">시작</button>
+      <button onclick="stopClock()">중지</button>
+      <button onclick="resetClock()">리셋</button>
+    </div>
+      
+
+  <script>
+    
+    let timerId;
+    let time = 0;
+    const stopwatch = document.getElementById("stopwatch")
+    let hour,min,sec;
+
+    function printTime(){
+      time++
+      stopwatch.innerText = getTimeFormatString()
+    }
+
+    function startClock(){
+      printTime()
+      stopClock()
+      timerId = setTimeout(startClock, 1000)
+    }
+
+    function stopClock(){
+      if (timerId != null) {
+        clearTimeout(timerId)
+      }
+    }
+
+    function resetClock() {
+      stopClock()
+      stopwatch.innerText = "00:00:00"
+      time = 0
+    }
+
+    function getTimeFormatString() {
+      hour = parseInt(String(time / (60 * 60)))
+      min = parseInt(String((time - (hour * 60 * 60))/60))
+      sec = time % 60
+    
+
+      return String(hour).padStart(2,'0')+":"+
+      String(min).padStart(2,'0')+":"+
+      String(sec).padStart(2,'0')
+    }
+  </script>
+</body>
+</html>
