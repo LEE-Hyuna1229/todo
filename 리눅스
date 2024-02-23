@@ -1,0 +1,39 @@
+1. Ubuntu 설치
+2. UTM 에서 ubuntu 설치
+3. Ubuntu 실행
+# 명령어
+- echo : echo hello시 hello 출력해줌
+- cal : 달력보여줌 / sudo apt install ncal 명령어 필요
+       ex) cal 12 2023, cal 2024, cal -y, cal -A 1 -B 2 12 2023: 2023 12월 이후 1달, 전 2달 같이 보여줌
+- history : 그동안 사용했던 명령어 보여줌
+- !n : history에서 n번에 실행했던 명령어 다시 실행해줌 
+- clear : 위에 실행했던 history속 명령어들 삭제
+- which : ex) which echo 시 컴퓨터에서 echo 위치 알려줌
+
+*정리
+- CommandNames 들은 쉘의 검색 PATH안에 있어야 합니다.
+- 쉘은 터미널을 통해 명령이 제출될 때 명령의 의미를 해석하는 것입니다.
+- Linux명령은 CommandName -options input 구조를 따릅니다.
+- 일부 명령에는 긴 형식과 짧은 형식 옵션이 있을 수 있습니다.
+- 짧은 형식 옵션에는 대시 1개(-)가 있고 긴 형식 옵션에는 대시 2개(--)가 있습니다.
+
+# man which
+- [Thing] : Thing은 선택사항
+- <Thing> : Thing은 필수사항
+- Thing...: Thing은 반복가능
+- THING1 | THING2 : THING1 과 THING2 중에 하나만 사용합니다.
+
+#command 번호
+- standard input(0):0< --> standard output(1):1>
+- --> standard error(2):2>
+
+# Piping
+-파이핑은 한 명령의 표준 출력을 다른 명령의 표준입력에 연결하는 것입이다.
+
+# Tee 명령어
+- 두 명령을 함께 연결하는 명령어, 데이터가 두 방향으로 흐를 수 있게 저장하는 동시에 파이프라인에도 전달  할 수 있게 해준다.
+
+# xargs 명령어
+
+# Aliases 명령어
+- 별칭을 사용하면 파이프라인과 명령을 기억하기 쉬운  별명으로 저장하여 나중에 훨씬 쉽게 사용할 수 있다.
