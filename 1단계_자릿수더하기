@@ -10,8 +10,19 @@ Answer
       result = sum[numlist]
       
       return result
+<두번째 시도> --> 실행성공
+> def solution(n):
+    num = str(n)
+    numlist = num.replace("",".")
+    numberlist = numlist.split(".")
+    for i in range(2):
+        result1 = numberlist.remove("")
+    result3 = list(map(int, numberlist))
+    summer = sum(result3)
+
+    return summer
       
-<두번째 시도>
+<두번째 답>
 > def solution(n):
     num = str(n)
     result = 0
