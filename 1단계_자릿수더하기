@@ -1,0 +1,21 @@
+Question
+- 자연수 N이 주어지면, N의 각 자릿수의 합을 구해서 return 하는 solution 함수를 만들어 주세요.
+예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다.
+
+Answer
+<첫번째 시도> --> 실행안됨
+> def solution(n):
+      summer = str(n).replace(""," ")
+      numlist = summer.split(" ")
+      result = sum[numlist]
+      
+      return result
+      
+<두번째 시도>
+> def solution(n):
+    num = str(n)
+    result = 0
+    for i in range(len(num)):
+        result += int(num[i-1])
+    return result
+
