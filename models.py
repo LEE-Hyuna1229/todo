@@ -1,7 +1,10 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from common.models import CommonModel
 
 # Create your models here.
-class User(AbstractUser):
-    is_business = models.BooleanField(default=False)
-    grade = models.CharField(max_length=10, default='C')
+class Review(CommonModel):
+    content = models.CharField(max_length=120)
+    likes_num = models.PositiveIntegerField(default=0)
+
+    user = models.ForeignKey("users.User", on_delete=models.CASCADE)
+    feed = models.ForeignKey("feeds.Feed", on_delete=models.CASCADE)
