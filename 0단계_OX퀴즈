@@ -1,0 +1,43 @@
+Question
+> 덧셈, 뺄셈 수식들이 'X [연산자] Y = Z' 형태로 들어있는 문자열 배열 quiz가 매개변수로 주어집니다. 
+수식이 옳다면 "O"를 틀리다면 "X"를 순서대로 담은 배열을 return하도록 solution 함수를 완성해주세요.
+
+Answer
+> def solution(quiz):
+    answer=[]
+    for i in range(0,len(quiz)):
+        apple = quiz[i].split("=")
+        if "-" in apple[0]:
+            bear = apple[0].split("-")
+            result = int(bear[0])-int(bear[1])
+        elif "+" in apple[0]:
+            bear = apple[0].split("+")
+            result = int(bear[0])+int(bear[1])
+            
+        if result == int(apple[1]):
+            answer.append("O")
+        else:
+            answer.append("X")
+    return answer
+
+👩‍💻 테스트 코드는 실행되는데 제출 시 런타임 에러가 난다,, for문 때문인거 같은데 할 수 있는 최소코드로 줄여봐도 모르겠다,,
+
+> 
+def solution(quiz):
+    answer=[]
+    for i in range(0,len(quiz)):
+        apple = quiz[i].split("=")
+        banana = apple[0].split(" ")
+        if "-" == banana[1]:
+            result = int(banana[0])-int(banana[2])
+        elif "+" == banana[1]:
+            result = int(banana[0])+int(banana[2])
+            
+        if result == int(apple[1]):
+            answer.append("O")
+        else:
+            answer.append("X")
+    return answer
+            
+👩‍💻 연산되는 숫자에 +,-가 있을수도 있는데 무조건 +나-가 있으면 분리하라고 해서 그런거였다 
+   조건이 괜히 있는게 아님ㅎ 해결~
