@@ -1,0 +1,32 @@
+Question
+> 두 정수 a, b가 주어졌을 때 a와 b 사이에 속한 모든 정수의 합을 리턴하는 함수, solution을 완성하세요.
+예를 들어 a = 3, b = 5인 경우, 3 + 4 + 5 = 12이므로 12를 리턴합니다.
+
+Answer
+> def solution(a, b):
+    bear = []
+    if a<=b:
+        for i in range(a,b+1):
+            bear.append(i)
+        return sum(bear)
+    elif a>=b:
+        for i in range(b,a+1):
+            bear.append(i)
+        return sum(bear)
+        
+👩‍💻 for문을 한번 돌리고 싶어서 코드를 다시 짜봤다
+
+> def solution(a,b):
+    bear=[]
+    if a<=b:
+        ball = range(a,b+1)
+    elif a>=b:
+        ball = range(b,a+1)
+    
+    for i in ball:
+        bear.append(i)
+    return sum(bear)
+
+👩‍💻 1) a,b 크기비교, 범위 정하기
+   2) 범위안에서 list로 들어가게 for문 돌림
+   3) list합 return
